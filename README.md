@@ -21,4 +21,5 @@ containing information about every person.
 
 Client:
 Should be a graphical user interface to ask the server about its list of people. How this looks is up to 
-you, but the functionality to get all people, and search for names and age must 
+you, but the functionality to get all people, and search for names and age must be included. The 
+client should be made either as a Windows Forms application or a Silverlight
