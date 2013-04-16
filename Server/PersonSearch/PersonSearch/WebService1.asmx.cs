@@ -16,11 +16,19 @@ namespace PersonSearch
     // [System.Web.Script.Services.ScriptService]
     public class WebService1 : System.Web.Services.WebService
     {
+        PersonList listOfPersons = new PersonList();
 
         [WebMethod]
-        public void getPerson()
+        public List<Person> search(string searchString)
         {
-
+            return listOfPersons.search(searchString);
         }
+
+        [WebMethod]
+        public List<Person> getAll()
+        {
+            return listOfPersons.getAllPersons();
+        }
+
     }
 }

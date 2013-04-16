@@ -28,7 +28,7 @@ namespace PersonSearch
             get { return firstName; }
             set { firstName = value; }
         }
-        public string LasttName
+        public string LastName
         {
             get { return firstName; }
             set { firstName = value; }
