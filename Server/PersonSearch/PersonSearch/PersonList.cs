@@ -13,6 +13,10 @@ namespace PersonSearch
         public PersonList()
         {
             list.Add(new Person("Vegard", "Harper",21));
+            list.Add(new Person("Lol", "Harper", 22));
+            list.Add(new Person("Bob", "Harper", 22));
+            list.Add(new Person("Tim", "Harper", 23));
+            list.Add(new Person("Steven", "Harper", 21));
             list.Add(new Person("Ola", "Nordmann", 1));
             list.Add(new Person("Barack", "Obama", 50));
             list.Add(new Person("Harald", "Kongen", 44));
@@ -20,6 +24,7 @@ namespace PersonSearch
             list.Add(new Person("Bill", "Gates", 1));
             list.Add(new Person("Linus", "Torvald", 50));
             list.Add(new Person("Warren", "Buffet", 50));
+            list.Add(new Person("Vega", "Øyene", 50));
 
         }
 
@@ -48,13 +53,15 @@ namespace PersonSearch
             bool isValue = Int32.TryParse(searchString, out value);
             if (isValue)
             {
+                
                 return searchAge(value);
             }
 
            List<Person> result = new List<Person>();
            foreach(Person a in list )          
            {
-               if (a.Name.Contains(searchString))
+               string lower = a.Name.ToLower();
+               if (lower.Contains(searchString))
                {
                    result.Add(a);
                }

@@ -11,6 +11,8 @@ namespace PersonSearch
         string lastName;
         int age;
 
+        public Person() { }
+        
         public Person(string firstname, string lastname, int age)
         {
             this.firstName = firstname;
@@ -30,8 +32,8 @@ namespace PersonSearch
         }
         public string LastName
         {
-            get { return firstName; }
-            set { firstName = value; }
+            get { return lastName; }
+            set { lastName = value; }
         }
 
         public int Age

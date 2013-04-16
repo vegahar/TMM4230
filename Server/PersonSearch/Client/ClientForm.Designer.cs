@@ -30,9 +30,9 @@
         {
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnGetAllPersons = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textSearch = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.listPersons = new System.Windows.Forms.ListView();
+            this.listPersons = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnSearch
@@ -55,12 +55,12 @@
             this.btnGetAllPersons.UseVisualStyleBackColor = true;
             this.btnGetAllPersons.Click += new System.EventHandler(this.btnGetAllPersons_Click);
             // 
-            // textBox1
+            // textSearch
             // 
-            this.textBox1.Location = new System.Drawing.Point(112, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(289, 20);
-            this.textBox1.TabIndex = 2;
+            this.textSearch.Location = new System.Drawing.Point(112, 32);
+            this.textSearch.Name = "textSearch";
+            this.textSearch.Size = new System.Drawing.Size(289, 20);
+            this.textSearch.TabIndex = 2;
             // 
             // label1
             // 
@@ -73,11 +73,11 @@
             // 
             // listPersons
             // 
-            this.listPersons.Location = new System.Drawing.Point(112, 80);
+            this.listPersons.FormattingEnabled = true;
+            this.listPersons.Location = new System.Drawing.Point(112, 58);
             this.listPersons.Name = "listPersons";
-            this.listPersons.Size = new System.Drawing.Size(289, 334);
+            this.listPersons.Size = new System.Drawing.Size(289, 355);
             this.listPersons.TabIndex = 4;
-            this.listPersons.UseCompatibleStateImageBehavior = false;
             // 
             // SearchForn
             // 
@@ -86,7 +86,7 @@
             this.ClientSize = new System.Drawing.Size(559, 443);
             this.Controls.Add(this.listPersons);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textSearch);
             this.Controls.Add(this.btnGetAllPersons);
             this.Controls.Add(this.btnSearch);
             this.Name = "SearchForn";
@@ -101,9 +101,9 @@
 
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnGetAllPersons;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textSearch;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListView listPersons;
+        private System.Windows.Forms.ListBox listPersons;
     }
 }
 

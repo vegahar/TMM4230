@@ -1,9 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonSearch", "PersonSearch\PersonSearch.csproj", "{49F9F820-9F9E-48EF-8593-3DA0CCC305D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "PersonSearch\Server.csproj", "{49F9F820-9F9E-48EF-8593-3DA0CCC305D7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{EDCED2C2-EC69-46BF-8D04-A53BE0B18EC0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{49F9F820-9F9E-48EF-8593-3DA0CCC305D7} = {49F9F820-9F9E-48EF-8593-3DA0CCC305D7}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
