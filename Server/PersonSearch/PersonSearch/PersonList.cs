@@ -61,7 +61,7 @@ namespace PersonSearch
            foreach(Person a in list )          
            {
                string lower = a.Name.ToLower();
-               if (lower.Contains(searchString))
+               if (lower.Contains(searchString.ToLower()))
                {
                    result.Add(a);
                }

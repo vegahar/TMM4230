@@ -37,7 +37,7 @@ namespace Client
             List<Person> result = soapClient.getAll().ToList<Person>();
             foreach (Person a in result)
             {
-                listPersons.Items.Add(a.FirstName);
+                listPersons.Items.Add(a.Name);
             }
         }
 

@@ -7,6 +7,7 @@ namespace PersonSearch
 {
     public class Person
     {
+        string name;
         string firstName;
         string lastName;
         int age;
@@ -23,6 +24,7 @@ namespace PersonSearch
         public string Name
         {
             get {return firstName + " " + lastName; }
+            set { }
         }
 
         public string FirstName
