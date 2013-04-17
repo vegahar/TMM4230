@@ -23,7 +23,7 @@ namespace PersonSearch
 
         public string Name
         {
-            get {return firstName + " " + lastName; }
+            get {return firstName + " " + lastName + ", age: " + age; }
             set { }
         }
 
