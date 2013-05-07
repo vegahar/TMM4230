@@ -1,8 +1,6 @@
 TMM4230
 =======
-TASK:
 Excercise 2
-------------------------------------------------------------
 The following should be delivered in this excercise:
 • A packed (ZIP, RAR or similar) version of your Visual Studio solution. To decrease the file size, 
 the ”bin”- and ”obj”-folders can be removed before packing.
